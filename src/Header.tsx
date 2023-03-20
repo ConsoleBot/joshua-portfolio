@@ -18,7 +18,7 @@ function Header() {
                 <a href="" className="min-h-[40px] min-w-[120px] bg-contain bg-no-repeat bg-center" style={{backgroundImage: `url(${logo})`}}></a>
                 <div className= {isActive ? 'bg-secondary navigation items-center lg:flex block w-full h-full fixed top-0 bottom-0 right-0 left-0' : 'navigation items-center hidden lg:flex' } >
                   <ul role="list"
-                    className={isActive ? 'items-center justify-center gap-[50px] flex gap-x-[24px] text-[18px] font-semibold mr-[24px] uppercase flex-wrap justify-end flex-col h-full' : 'flex gap-x-[24px] text-[18px] font-semibold mr-[24px] uppercase flex-wrap justify-end'}>
+                    className={isActive ? 'items-center gap-[50px] flex gap-x-[24px] text-[18px] font-semibold mr-[24px] uppercase flex-wrap justify-end flex-col h-full' : 'flex gap-x-[24px] text-[18px] font-semibold mr-[24px] uppercase flex-wrap justify-end'}>
                     <li className="{% if page_title == 'home' %}text-primary{% endif %}">
                       <a href="" className="text-primary font-light cursor-poiinter" data-target="home">About Me</a>
                     </li>
