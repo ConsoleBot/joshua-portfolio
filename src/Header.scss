@@ -1,0 +1,13 @@
+ul li a {
+  transition: 0.5s;
+}
+
+ul li a:hover {
+  color: #FFFFFF;
+  text-shadow:  0 0 10px #FFFFFF,
+                0 0 20px #FFFFFF,
+                0 0 40px #FFFFFF,
+                0 0 80px #FFFFFF,
+                0 0 120px #FFFFFF;
+  letter-spacing: 0.45px;
+}

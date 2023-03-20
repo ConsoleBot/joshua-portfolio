@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import logo from './assets/joshua-logo.svg'
 import { useState } from 'react';
+import './Header.scss';
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -19,19 +20,19 @@ function Header() {
                   <ul role="list"
                     className={isActive ? 'items-center justify-center gap-[50px] flex gap-x-[24px] text-[18px] font-semibold mr-[24px] uppercase flex-wrap justify-end flex-col h-full' : 'flex gap-x-[24px] text-[18px] font-semibold mr-[24px] uppercase flex-wrap justify-end'}>
                     <li className="{% if page_title == 'home' %}text-primary{% endif %}">
-                      <a href="" className="section-nav-trigger text-primary font-light cursor-poiinter" data-target="home">About Me</a>
+                      <a href="" className="text-primary font-light cursor-poiinter" data-target="home">About Me</a>
                     </li>
                     <li className="">
-                      <a href="#" className="section-nav-trigger text-primary font-light cursor-poiinter" data-target="about">Work</a>
+                      <a href="#" className="text-primary font-light cursor-poiinter" data-target="about">Work</a>
                     </li>
                     <li className="">
-                      <a href="#" className="section-nav-trigger text-primary font-light cursor-poiinter" data-target="services">My Projects</a>
+                      <a href="#" className="text-primary font-light cursor-poiinter" data-target="services">My Projects</a>
                     </li>
                     <li className="">
-                      <a href="#" className="section-nav-trigger text-primary font-light cursor-poiinter" data-target="activities">Contact</a>
+                      <a href="#" className="text-primary font-light cursor-poiinter" data-target="activities">Contact</a>
                     </li>
                     <li className={isActive ? 'list-item' : 'hidden'}>
-                      <a href="#"  className="section-nav-trigger text-primary font-light cursor-poiinter" data-target="activities" onClick={handleClick}>Back</a>
+                      <a href="#"  className="text-primary font-light cursor-poiinter" data-target="activities" onClick={handleClick}>Back</a>
                     </li>
                   </ul>
                 </div>
