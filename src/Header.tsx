@@ -14,19 +14,16 @@ function Header() {
   return  <div className="h-[70px] relative z-50">
             <nav
               className="fixed top-0 h-[70px] w-full bg-secondary transition ease-in-out duration-500 flex flex-col border-b border-b-secondary shadow-md">
-              <div className="h-full w-full px-[16px] justify-between flex items-center mx-auto lg:px-[120px] gap-x-[28px]">
+              <div className="h-full w-full px-[16px] md:px-[58px] lg:px-[200px] xl:px-[300px] justify-between flex items-center mx-auto  gap-x-[28px]">
                 <a href="" className="min-h-[40px] min-w-[120px] bg-contain bg-no-repeat bg-center" style={{backgroundImage: `url(${logo})`}}></a>
                 <div className= {isActive ? 'bg-secondary navigation items-center lg:flex block w-full h-full fixed top-0 bottom-0 right-0 left-0' : 'navigation items-center hidden lg:flex' } >
                   <ul role="list"
-                    className={isActive ? 'items-center gap-[50px] flex gap-x-[24px] text-[18px] font-semibold mr-[24px] uppercase flex-wrap justify-end flex-col h-full' : 'flex gap-x-[24px] text-[18px] font-semibold mr-[24px] uppercase flex-wrap justify-end'}>
+                    className={isActive ? 'items-center gap-[50px] flex gap-x-[24px] text-[18px] font-semibold mr-[24px] uppercase flex-wrap justify-center flex-col h-full' : 'flex gap-x-[24px] text-[18px] font-semibold mr-[24px] uppercase flex-wrap justify-end'}>
                     <li className="{% if page_title == 'home' %}text-primary{% endif %}">
                       <a href="" className="text-primary font-light cursor-poiinter" data-target="home">About Me</a>
                     </li>
                     <li className="">
-                      <a href="#" className="text-primary font-light cursor-poiinter" data-target="about">Work</a>
-                    </li>
-                    <li className="">
-                      <a href="#" className="text-primary font-light cursor-poiinter" data-target="services">My Projects</a>
+                      <a href="#" className="text-primary font-light cursor-poiinter" data-target="services">My Work</a>
                     </li>
                     <li className="">
                       <a href="#" className="text-primary font-light cursor-poiinter" data-target="activities">Contact</a>

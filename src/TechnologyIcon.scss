@@ -1,0 +1,10 @@
+.box2-wrap {
+  filter: drop-shadow( 0 0 5px #fff)
+          drop-shadow( -5px 0 10px #0172fd)
+          drop-shadow( 8px 0 8px #f0f);
+}
+
+.box2 {
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+

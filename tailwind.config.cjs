@@ -20,6 +20,9 @@ module.exports = {
           '50%': { transform: 'translateY(10px)' },
           '100%': { transform: 'translateY(0px)' },
         }
+      },
+      gridTemplateColumns: {
+        'techonolgy-layout': 'repeat(auto-fit, minmax(315px, 1fr))'
       }
     },
   },

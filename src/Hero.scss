@@ -1,0 +1,10 @@
+.name {
+  transition: 0.5s;
+}
+
+.name:hover {
+  color: #3C2133;
+  text-shadow:  0 0 10px #FFFFFF,
+                0 0 20px #FFFFFF;
+  letter-spacing: 0.45px;
+}
