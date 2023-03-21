@@ -1,10 +1,16 @@
 .box2-wrap {
-  filter: drop-shadow( 0 0 5px #fff)
-          drop-shadow( -5px 0 10px #0172fd)
-          drop-shadow( 8px 0 8px #f0f);
+  filter: drop-shadow( 0 0 3px #FFFFFF)
+          drop-shadow( -3px 0 3px #0172fd)
+          drop-shadow( 3px 0 3px #611F3F);
 }
 
 .box2 {
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
 
+.box2-wrap:hover {
+  filter: drop-shadow( 0 0 6px #FFFFFF)
+  drop-shadow( -6px 0 6px #0172fd)
+  drop-shadow( 6px 0 6px #611F3F);
+  transition: all 0.4s;
+}
