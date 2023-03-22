@@ -1,0 +1,24 @@
+.bracket-open:after {
+  content: '{';
+  color: #F1D710;
+}
+
+
+.bracket-close:after {
+  content: '}';
+  color: #F1D710;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#deploy[disabled] {
+  background-color: #3C2133;
+}

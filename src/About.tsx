@@ -18,10 +18,16 @@ import octobercms from './assets/octobercms.png';
 import react from './assets/react.png';
 import tailwindcss from './assets/tailwindcss.png';
 import wordpress from './assets/wordpress.png';
+import aos from './assets/aos.png';
+import chartjs from './assets/chartjs.png';
+import gulp from './assets/gulp.png';
+import momentjs from './assets/momentjs.png';
+import nunjucks from './assets/nunjucks.png';
+import materializecss from './assets/materializecss.png';
 
 function About() {
 
-  return  <div className="px-[16px] md:px-[58px] lg:px-[200px] xl:px-[300px]">
+  return  <div id="about" className="pt-[75px] px-[16px] md:px-[58px] lg:px-[100px] xl:px-[180px] 2xl:px-[300px]  mb-[100px]">
             <div className="text-white text-[16px] font-semibold">INTRODUCTION</div>
             <div className="text-white text-[26px] font-bold tracking-wide mb-[20px]">OVERVIEW</div>
             <div className="text-white mb-[70px]">
@@ -39,7 +45,6 @@ function About() {
                 <TechnologyIcon image={html} name="HTML"></TechnologyIcon>
                 <TechnologyIcon image={css} name="CSS"></TechnologyIcon>
                 <TechnologyIcon image={js} name="JavaScript"></TechnologyIcon>
-                <TechnologyIcon image={jquery} name="jQUery"></TechnologyIcon>
                 <TechnologyIcon image={ts} name="TypeScript"></TechnologyIcon>
                 <TechnologyIcon image={sass} name="Sass"></TechnologyIcon>
                 <TechnologyIcon image={php} name="PHP"></TechnologyIcon>
@@ -50,8 +55,8 @@ function About() {
               <div className='flex gap-[20px] flex-wrap'>
                 <TechnologyIcon image={git} name="Git"></TechnologyIcon>
                 <TechnologyIcon image={vscode} name="VSCode"></TechnologyIcon>
-                <TechnologyIcon image={vscode} name="Gulp"></TechnologyIcon>
-                <TechnologyIcon image={vscode} name="Nunjucks"></TechnologyIcon>
+                <TechnologyIcon image={gulp} name="Gulp"></TechnologyIcon>
+                <TechnologyIcon image={nunjucks} name="Nunjucks"></TechnologyIcon>
               </div>
             </div>
             <div className='mb-[60px]'>
@@ -66,9 +71,19 @@ function About() {
               <div className='flex gap-[20px] flex-wrap'>
                 <TechnologyIcon image={tailwindcss} name="TailwindCSS"></TechnologyIcon>
                 <TechnologyIcon image={bootstrap} name="Bootstrap"></TechnologyIcon>
-                <TechnologyIcon image={react} name="React"></TechnologyIcon>
+                <TechnologyIcon image={materializecss} name="MaterializeCSS"></TechnologyIcon>
                 <TechnologyIcon image={angular} name="Angular"></TechnologyIcon>
                 <TechnologyIcon image={laravel} name="Laravel"></TechnologyIcon>
+              </div>
+            </div>
+            <div className='mb-[60px]'>
+              <div className='text-white text-[16px] font-semibold mb-[20px]'>Javascript Libraries</div>
+              <div className='flex gap-[20px] flex-wrap'>
+                <TechnologyIcon image={jquery} name="jQUery"></TechnologyIcon>
+                <TechnologyIcon image={react} name="React"></TechnologyIcon>
+                <TechnologyIcon image={chartjs} name="ChartJS"></TechnologyIcon>
+                <TechnologyIcon image={momentjs} name="MomentJS"></TechnologyIcon>
+                <TechnologyIcon image={aos} name="AOS"></TechnologyIcon>
               </div>
             </div>
           </div>
