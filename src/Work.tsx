@@ -57,17 +57,29 @@ function Work() {
 
 
   return  <div id="work" className="pt-[75px] px-[16px] md:px-[58px] lg:px-[100px] xl:px-[180px] 2xl:px-[300px]  mb-[100px]">
-            <div className="text-white text-[26px] font-bold tracking-wide mb-[10px]">Work</div>
-            <div className="text-white">
+            <div data-aos="fade-down" data-aos-duration="1500" className="text-white text-[26px] font-bold tracking-wide mb-[10px]">Work</div>
+            <div data-aos="fade-up" data-aos-duration="1500" className="text-white">
               Here are some projects I've worked. Build from scratch as a Frontend and some CMS freelance works.
             </div>
             <div className='py-[50px] grid grid-cols-techonolgy-layout gap-[20px]'>
-              <Project {... projects.biologit}></Project>
-              <Project {... projects.smartchoices}></Project>
-              <Project {... projects.rpm}></Project>
-              <Project {... projects.bahiavistarestort}></Project>
-              <Project {... projects.managedpmo}></Project>
-              <Project {... projects.cebuswimmingpools}></Project>
+              <div data-aos="flip-up" data-aos-duration="1000">
+                <Project {... projects.biologit}></Project>
+              </div>
+              <div data-aos="flip-up" data-aos-duration="1200">
+                <Project {... projects.smartchoices}></Project>
+              </div>
+              <div data-aos="flip-up" data-aos-duration="1400">
+                <Project {... projects.rpm}></Project>
+              </div>
+              <div data-aos="flip-up" data-aos-duration="1600">
+                <Project {... projects.bahiavistarestort}></Project>
+              </div>
+              <div data-aos="flip-up" data-aos-duration="1800">
+                <Project {... projects.managedpmo}></Project>
+              </div>
+              <div data-aos="flip-up" data-aos-duration="2000">
+                <Project {... projects.cebuswimmingpools}></Project>
+              </div>
             </div>
           </div>
 }

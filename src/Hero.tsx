@@ -21,8 +21,8 @@ function Hero() {
   }, [index1])
 
   return  <div className="h-[450px] md:h-[600px] px-[16px] lg:px-[120px] relative">
-            <div className="h-full w-full absolute bg-contain left-0  top-[30px] md:top-0 bg-no-repeat bg-top md:bg-center opacity-[20%]" style={{backgroundImage: `url(${tech})`}}></div>
-            <div className="animate-bounceHero m-[auto] h-full w-[90%] lg:w-[50%] bg-contain bg-no-repeat bg-center relative"  style={{backgroundImage: `url(${pc})`}}>
+            <div data-aos="new-animation" data-aos-duration="1500" className="h-full w-full absolute bg-contain left-0  top-[30px] md:top-0 bg-no-repeat bg-top md:bg-center opacity-[20%]" style={{backgroundImage: `url(${tech})`}}></div>
+            <div data-aos="fade-up" data-aos-duration="1500" className="animate-bounceHero m-[auto] h-full w-[90%] lg:w-[50%] bg-contain bg-no-repeat bg-center relative"  style={{backgroundImage: `url(${pc})`}}>
               <div className='text-white font-bold text-[28px] absolute bottom-[120px] left-[50%] translate-x-[-50%] md:translate-x-[0%] md:top-[70px] lg:top-[145px] md:left-[40px] lg:left-[-150px] w-[280px] h-[35px]'><span className='mr-[10px]'>Hello, I'm</span><span className='text-primary name cursor-pointer font-black'>Joshua</span></div>
               <div className="text-[20px] text-white absolute pointer-events-none bottom-[50px] left-[50%] translate-x-[-50%] md:translate-x-[0%] md:top-[100px] lg:top-[180px] md:left-[40px] lg:left-[-150px] w-[280px] h-[60px]">{text1}</div>
             </div>

@@ -28,62 +28,111 @@ import materializecss from './assets/materializecss.png';
 function About() {
 
   return  <div id="about" className="pt-[75px] px-[16px] md:px-[58px] lg:px-[100px] xl:px-[180px] 2xl:px-[300px]  mb-[100px]">
-            <div className="text-white text-[16px] font-semibold">INTRODUCTION</div>
-            <div className="text-white text-[26px] font-bold tracking-wide mb-[20px]">OVERVIEW</div>
-            <div className="text-white mb-[70px]">
-              I'm a skilled Frontend Developer with experties of HTML, CSS and Javacsript Techonologies and experience of React, Angular frameworks. 
-              I also have backend development experiences. I am also seeking to bring more than my expertise in developing responsive web applications and in 
-              translating UX designs into interactive front-end design.
-            </div>
+            <div data-aos="fade-right" data-aos-duration="1500" className="text-white text-[16px] font-semibold">INTRODUCTION</div>
+            <div data-aos="fade-down" data-aos-duration="1500"  className="text-white text-[26px] font-bold tracking-wide mb-[20px]">OVERVIEW</div>
+            <p  data-aos="fade-up" data-aos-duration="1500" className="text-white mb-[10px]">
+              I am an experienced Front End Web Developer with expertise in HTML, CSS, Sass, Javascript, jQuery, Ajax, DataTables, ChartJS, and MomentJS. I hold a Bachelor's degree in Information and Communications Technology from the University of San Carlos and has worked as a Full-Time Front End Web Developer at Seditio Asia Inc., gaining experience in React, AngularJS, PHP, SQL, REST API, Laravel, and TypeScript. I am currently a part-time Front End Web Developer at the same company.
+            </p>
+            <p data-aos="fade-up" data-aos-duration="1500" className="text-white mb-[70px]">
+              I am proficient in integrating REST API's in front-end development and has an advanced skills in Git, Wordpress, OctoberCMS, Terminal, TailwindCSS, Bootstrap, and Nunjucks.  I am passionate about web development and technology, always seeks to expand my knowledge and skills in this field.
+            </p>
             <div className='grid sm:grid-cols-techonolgy-layout gap-[50px] mb-[100px]'>
-              <Technology title="Web Developer" image={web} ></Technology>
-              <Technology title="Frontend Web Developer" image={frontend} ></Technology>
-            </div>
-            <div className='mb-[60px]'>
-              <div className='text-white text-[16px] font-semibold mb-[20px]'>Languages i speak</div>
-              <div className='flex gap-[20px] flex-wrap'>
-                <TechnologyIcon image={html} name="HTML"></TechnologyIcon>
-                <TechnologyIcon image={css} name="CSS"></TechnologyIcon>
-                <TechnologyIcon image={js} name="JavaScript"></TechnologyIcon>
-                <TechnologyIcon image={ts} name="TypeScript"></TechnologyIcon>
-                <TechnologyIcon image={sass} name="Sass"></TechnologyIcon>
-                <TechnologyIcon image={php} name="PHP"></TechnologyIcon>
+              <div data-aos="fade-up-right" data-aos-duration="1000">
+                <Technology title="Web Developer" image={web} ></Technology>
+              </div>
+              <div data-aos="fade-up-left" data-aos-duration="2000">
+                <Technology title="Frontend Web Developer" image={frontend} ></Technology>
               </div>
             </div>
             <div className='mb-[60px]'>
-              <div className='text-white text-[16px] font-semibold mb-[20px]'>Development tools i touch</div>
+              <div data-aos="fade-right" data-aos-duration="1000" className='text-white text-[16px] font-semibold mb-[20px]'>Languages i speak</div>
               <div className='flex gap-[20px] flex-wrap'>
-                <TechnologyIcon image={git} name="Git"></TechnologyIcon>
-                <TechnologyIcon image={vscode} name="VSCode"></TechnologyIcon>
-                <TechnologyIcon image={gulp} name="Gulp"></TechnologyIcon>
-                <TechnologyIcon image={nunjucks} name="Nunjucks"></TechnologyIcon>
+                <div data-aos="fade-up" data-aos-duration="500">
+                  <TechnologyIcon image={html} name="HTML"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="600">
+                  <TechnologyIcon image={css} name="CSS"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="700">
+                  <TechnologyIcon image={js} name="JavaScript"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800">
+                  <TechnologyIcon image={ts} name="TypeScript"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="900">
+                  <TechnologyIcon image={sass} name="Sass"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                  <TechnologyIcon image={php} name="PHP"></TechnologyIcon>
+                </div>
               </div>
             </div>
             <div className='mb-[60px]'>
-              <div className='text-white text-[16px] font-semibold mb-[20px]'>CMS technologies</div>
+              <div data-aos="fade-right" data-aos-duration="1000" className='text-white text-[16px] font-semibold mb-[20px]'>Development tools i touch</div>
               <div className='flex gap-[20px] flex-wrap'>
-                <TechnologyIcon image={octobercms} name="OctoberCMS"></TechnologyIcon>
-                <TechnologyIcon image={wordpress} name="Wordpress"></TechnologyIcon>
+                <div data-aos="fade-up" data-aos-duration="500">
+                  <TechnologyIcon image={git} name="Git"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="600">
+                  <TechnologyIcon image={vscode} name="VSCode"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="700">
+                  <TechnologyIcon image={gulp} name="Gulp"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800">
+                  <TechnologyIcon image={nunjucks} name="Nunjucks"></TechnologyIcon>
+                </div>
               </div>
             </div>
             <div className='mb-[60px]'>
-              <div className='text-white text-[16px] font-semibold mb-[20px]'>Frameworks</div>
+              <div data-aos="fade-right" data-aos-duration="1000" className='text-white text-[16px] font-semibold mb-[20px]'>CMS technologies</div>
               <div className='flex gap-[20px] flex-wrap'>
-                <TechnologyIcon image={tailwindcss} name="TailwindCSS"></TechnologyIcon>
-                <TechnologyIcon image={bootstrap} name="Bootstrap"></TechnologyIcon>
-                <TechnologyIcon image={materializecss} name="MaterializeCSS"></TechnologyIcon>
-                <TechnologyIcon image={angular} name="Angular"></TechnologyIcon>
-                <TechnologyIcon image={laravel} name="Laravel"></TechnologyIcon>
+                <div data-aos="fade-up" data-aos-duration="500">
+                  <TechnologyIcon image={octobercms} name="OctoberCMS"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="600">
+                  <TechnologyIcon image={wordpress} name="Wordpress"></TechnologyIcon>
+                </div>
               </div>
             </div>
             <div className='mb-[60px]'>
-              <div className='text-white text-[16px] font-semibold mb-[20px]'>Javascript Libraries</div>
+              <div data-aos="fade-right" data-aos-duration="1000" className='text-white text-[16px] font-semibold mb-[20px]'>Frameworks</div>
               <div className='flex gap-[20px] flex-wrap'>
-                <TechnologyIcon image={jquery} name="jQUery"></TechnologyIcon>
-                <TechnologyIcon image={react} name="React"></TechnologyIcon>
-                <TechnologyIcon image={chartjs} name="ChartJS"></TechnologyIcon>
-                <TechnologyIcon image={momentjs} name="MomentJS"></TechnologyIcon>
-                <TechnologyIcon image={aos} name="AOS"></TechnologyIcon>
+                <div data-aos="fade-up" data-aos-duration="500">
+                  <TechnologyIcon image={tailwindcss} name="TailwindCSS"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="600">
+                  <TechnologyIcon image={bootstrap} name="Bootstrap"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="700">
+                  <TechnologyIcon image={materializecss} name="MaterializeCSS"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800">
+                  <TechnologyIcon image={angular} name="Angular"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800">
+                  <TechnologyIcon image={laravel} name="Laravel"></TechnologyIcon>
+                </div>
+              </div>
+            </div>
+            <div className='mb-[60px]'>
+              <div data-aos="fade-right" data-aos-duration="1000" className='text-white text-[16px] font-semibold mb-[20px]'>Javascript Libraries</div>
+              <div className='flex gap-[20px] flex-wrap'>
+                <div data-aos="fade-up" data-aos-duration="500">
+                  <TechnologyIcon image={jquery} name="jQUery"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="600">
+                  <TechnologyIcon image={react} name="React"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="700">
+                  <TechnologyIcon image={chartjs} name="ChartJS"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800">
+                  <TechnologyIcon image={momentjs} name="MomentJS"></TechnologyIcon>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800">
+                  <TechnologyIcon image={aos} name="AOS"></TechnologyIcon>
+                </div>
               </div>
             </div>
           </div>

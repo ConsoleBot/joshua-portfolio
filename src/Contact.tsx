@@ -88,10 +88,10 @@ function Contact() {
   }
 
   return  <div id="contact" className="pt-[75px] px-[16px] md:px-[58px] lg:px-[100px] xl:px-[180px] 2xl:px-[300px]">
-            <div className="text-white">Get in touch.</div>
-            <div className="text-white text-[26px] font-bold tracking-wide">Contact</div>
+            <div data-aos="fade-right" data-aos-duration="1500" className="text-white">Get in touch.</div>
+            <div data-aos="fade-down" data-aos-duration="1500" className="text-white text-[26px] font-bold tracking-wide">Contact</div>
             <div className='grid grid-cols-techonolgy-layout gap-[20px] items-center py-[50px]'>
-              <div className="m-h-[500px] box1 py-[20px] px-[30px] border border-primary rounded-[8px]">
+              <div data-aos="zoom-in-right" data-aos-duration="1500" className="m-h-[500px] box1 py-[20px] px-[30px] border border-primary rounded-[8px]">
                 <div className="text-white flex gap-[10px] mb-[20px]">
                   <span className='text-text1'>import</span>
                   <span className='text-text2'>EmailMe</span>
@@ -190,7 +190,7 @@ function Contact() {
                    <button id="deploy" onClick={(e: any ) => sendEmailValidationRequest(email)} className="px-[24px] py-[12px] bg-primary float-right" disabled={active}> Deploy</button>
                 </span>
               </div>
-              <div className='relative h-[500px] bg-cover bg-no-repeat bg-center' style={{backgroundImage: `url(${world})`}}></div>
+              <div data-aos="zoom-in-left" data-aos-duration="1500" className='relative h-[500px] bg-cover bg-no-repeat bg-center' style={{backgroundImage: `url(${world})`}}></div>
             </div>
           </div>
 }
